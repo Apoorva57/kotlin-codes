@@ -1,0 +1,12 @@
+fun main() {
+    val coinSide = Coin()
+    println("You flipped a ${coinSide.flip()}")
+}
+
+class Coin {
+    fun flip() : String {
+        val head = "Heads"
+        val tails = "Tails"
+        return listOf(head, tails).random()
+    }
+}
